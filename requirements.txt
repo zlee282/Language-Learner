@@ -1,4 +1,25 @@
+# Core Dependencies
 openai>=1.0.0
 streamlit>=1.0.0
-requests>=2.25.1
 python-dotenv>=0.19.0
+
+# Web Framework
+fastapi>=0.68.0
+uvicorn>=0.15.0
+requests>=2.25.1
+
+# Database
+sqlalchemy>=1.4.0
+bcrypt>=4.0.1
+
+# API
+pydantic>=1.8.0
+
+# Streamlit Extras
+streamlit-extras>=0.3.0
+
+# ASGI Server
+uvicorn[standard]>=0.15.0
+
+# CORS Middleware
+python-multipart>=0.0.5
