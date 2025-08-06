@@ -49,7 +49,7 @@ def dataset_db():
     Base.metadata.create_all(engine)  # Recreate tables with updated schema
     session = get_session()
     for username, password in users:
-        user = User(username=username, password=password, nativeLang="English", newLang="English", proficiency="Beginner")
+        user = User(username=username, password=password, nativeLang="English", newLang="Spanish", proficiency="Beginner")
         session.add(user)
     session.commit()
 
@@ -63,16 +63,6 @@ def get_all_passwords():
     passwords = session.query(User.password).all()
     return [password[0] for password in passwords]
 
-def add_vocabulary_word(user_id, word, starred=False):
-    session = get_session()
-    # Check if word already exists for user
-    existing = session.query(Vocabulary).filter_by(user_id=user_id, word=word).first()
-    if not existing:
-        vocab = Vocabulary(word=word, starred=starred, user_id=user_id)
-        session.add(vocab)
-        session.commit()
-        return True
-    return False
 
 def get_user_vocabulary(user_id, show_starred_only=False):
     session = get_session()

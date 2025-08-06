@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+
+.st-key-quiz button{
+    color: rgb(68, 78, 195);
+}
+
+.st-key-title_container h1 { 
+    color: #2e4979;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Kranky', cursive, sans-serif;
+}
+
+.st-key-login_register_container {
+    background-color: rgba(252, 248, 240, 0.9); /* Slightly more opaque */
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.st-key-login_register_container h3 {
+    color: #8fa6bb;
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive, sans-serif;
+    
+}
+
+.st-key-login_register_container .form-container {
+    width: 100%;
+    max-width: 400px; /* Match your input width */
+}
+
+.st-key-login_register_container .stButton > button {
+    background-color: #FADADD !important;
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 200px;
+}
+
+
+/* Center text input labels */
+div.stTextInput > label {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+}
+
+/* Center the input container */
+div.stTextInput {
+    width: 100% !important;
+    max-width: 400px !important;
+    margin: 0 auto !important;
+}
+
+/* Center the input field */
+div.stTextInput > div > div > input {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/* Center the input wrapper */
+div.stTextInput > div {
+    width: 100% !important;
+}
+
+/* Remove any left padding that might be pushing content off-center */
+div.stTextInput > div > div {
+    padding-left: 0 !important;
+    justify-content: center !important;
+}
+/* Error messages */
+.st-key-login_register_container p {
+    color: #F4A8A4 !important;
+    text-align: center !important;
+    width: 100%;
+    margin: 5px 0 !important;
+    font-family: 'Love Ya Like A Sister', cursive, sans-serif;
+}
+
+/* Style list items in the login/register container */
+.st-key-login_register_container ul {
+    color: #2e4979;  /* Change this to your desired color */
+    font-family: 'Love Ya Like A Sister', cursive, sans-serif; /* Optional: match your theme */
+    text-align: center; /* Optional: center the text */
+    list-style-position: inside; /* Keeps bullet points inside the container */
+    padding-left: 0; /* Removes default left padding */
+}
+
+/* Style list items */
+.st-key-login_register_container li {
+    margin: 10px 0; /* Add some vertical spacing between items */
+    color: #2e4979; /* Same as above, or choose a different color */
+}
+
+/* If you want to style ordered lists differently */
+.st-key-login_register_container ol {
+    color: #2e4979;
+    text-align: left; /* Or center, as preferred */
+    padding-left: 20px;
+}
+
+.st-key-reply_container h3 { 
+    color: #8fa6bb;
+    font-size: 30px;
+    text-align: center;
+}
+
+.st-key-reply_container{ 
+    text-align: center;
+}
+
+.st-key-buttons button{
+    justify-content: center;
+    background-color: #FADADD;
+}
+
+/* Target the button by its key */
+button[kind="secondary"][data-testid="baseButton-buttons"] {
+    margin: 0 auto !important;
+    display: block !important;
+    width: fit-content !important;
+}
+
+/* Add this as a fallback */
+.stButton > button {
+    margin: 0 auto !important;
+    display: block !important;
+    width: fit-content !important;
+}
+
+/* Center the select box container */
+div[data-baseweb="select"] {
+    margin: 0 auto !important;
+    max-width: 400px !important;
+    width: 100% !important;
+}
+
+/* Center the select box text */
+div[data-baseweb="select"] > div {
+    text-align: center !important;
+    background-color: #f8f9fa !important;
+    border: 2px solid #8fa6bb !important;
+    border-radius: 8px !important;
+    color: #2e4979 !important;
+}
+
+/* Center the dropdown options */
+div[data-baseweb="popover"] {
+    text-align: center !important;
+}
+
+/* Center the select box label */
+div[data-baseweb="select"] + div > div {
+    text-align: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+/* Ensure the label container is centered */
+div[data-baseweb="form-container"] > div > div:first-child {
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 400px !important;
+}
+
+/* More specific selector if needed */
+.stSelectbox > label {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+/* Add to your style.css */
+.content-box {
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Make sure text is readable on the new background */
+.content-box h1,
+.content-box h2,
+.content-box h3,
+.content-box p,
+.content-box label,
+.content-box .stTextInput > div > div > input {
+    color: #333 !important; /* Dark gray text for better contrast */
+    text-shadow: none !important; /* Remove any text shadows */
+}
+
+/* Adjust form elements to work with the new background */
+.content-box .stTextInput > div > div {
+    background-color: #fff !important; /* Solid white for inputs */
+    border-radius: 8px;
+}
+
+/* Style for buttons inside content box */
+.content-box .stButton > button {
+    background-color: #2e4979 !important; /* Match your color scheme */
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 10px 0;
+}
+
+/* For the settings page specifically */
+.content-box .stSelectbox > div {
+    background-color: #fff !important;
+    border-radius: 8px;
+}
+
+div[data-baseweb="input"] input {
+    background-color: #f8f9fa !important;  /* Light gray background */
+    border: 2px solid #8fa6bb !important;  /* Border color to match your theme */
+    border-radius: 8px !important;
+    color: #2e4979 !important;  /* Text color */
+    padding: 10px 15px !important;
+}
+
+/* Style the input when focused */
+div[data-baseweb="input"] input:focus {
+    border-color: #f4c6c6 !important;  /* Darker border when focused */
+    box-shadow: 0 0 0 2px rgba(46, 73, 121, 0.2) !important;
+}
+
+/* Style textarea inputs (like in your writing revision section) */
+div[data-baseweb="textarea"] textarea {
+    background-color: #f8f9fa !important;
+    border: 2px solid #8fa6bb !important;
+    border-radius: 8px !important;
+    color: #2e4979 !important;
+    padding: 12px !important;
+    min-height: 150px !important;
+}
+
+div[role="listbox"] {
+    background-color: #ffffff !important;
+    border: 2px solid #8fa6bb !important;
+    border-radius: 8px !important;
+}
+
+/* Center the quiz content */
+.quiz-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Center the text area */
+.quiz-content .stTextArea {
+    width: 100%;
+    max-width: 600px; /* Adjust this value as needed */
+    margin: 0 auto;
+}
+
+/* Center the text area label */
+.quiz-content .stTextArea > label {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+/* Center the text area input */
+.quiz-content .stTextArea > div > div {
+    margin: 0 auto;
+    max-width: 100% !important;
+}
+
+/* Center the submit button */
+.quiz-content .stButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Style the text area */
+.quiz-content textarea {
+    text-align: center;
+    min-height: 120px !important;
+    border-radius: 8px !important;
+    border: 2px solid #8fa6bb !important;
+    padding: 15px !important;
+}
+
